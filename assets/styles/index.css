@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #353643;
+  color: #ececec;
+  font-size: 1.2em;
+  font-family: "Roboto";
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  height: 7.5vh;
+  width: 100vw;
+  background: #353643;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  padding: 5px;
+  list-style-type: none;
+  margin-right: 5%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ececec;
+  font-family: "Roboto";
+}
+
+main {
+  display: grid;
+  grid-template-areas: "main-graphic" "aboutme" "portfolio" "contact";
+}
+
+.main-graphic {
+  grid-area: main-graphic;
+  height: 100vh;
+  width: 100vw;
+}
+.main-graphic h1, .main-graphic h3 {
+  margin-left: 20%;
+  margin-top: 10%;
+  position: fixed;
+  z-index: 1;
+}
+.main-graphic h3 {
+  margin-top: 14%;
+}
+.main-graphic .mountains {
+  z-index: 0;
+}
+
+.panel {
+  padding: 15%;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 10fr;
+}
+.panel .panel__title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.panel .panel__content {
+  grid-column: 2/-2;
+  grid-row: 2/-2;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+.portfolio-item .portfolio-item__photo {
+  height: 200px;
+}
+.portfolio-item .portfolio-item__description {
+  padding: 1%;
+}
+.portfolio-item .portfolio-item__description p {
+  font-family: "Roboto";
+}
+.portfolio-item .portfolio-item__description h4 {
+  margin-bottom: 1%;
+}
+
+.portfolio-item:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.flex-flipped {
+  flex-direction: row-reverse;
+}
+
+#aboutme {
+  grid-area: aboutme;
+}
+
+#porfolio {
+  grid-area: portfolio;
+}
+
+#contact {
+  grid-area: contact;
+}
