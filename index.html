@@ -4,148 +4,243 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Jordan - Portfolio</title>
-    <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/index.js"></script>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <script src="https://kit.fontawesome.com/3defe8b6e7.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <body class="text-light bg-dark">
+    <nav id="nav" class="navbar navbar-expand navbar-dark fixed-top text-light">
+      <a class="navbar-brand" href="#"></a>
+      <div class="ml-auto" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li id="navTopLink" class="nav-item" hidden>
+            <a class="nav-link" href="#">Top</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <div class="main-graphic">
-        <h1>Alex Jordan</h1>
-        <h3>Junior Developer, Senior Colleague</h3>
-        <!-- mountains start -->
-        <div class="mountains">
+    <button class="btn btn-primary fixed-bottom" onclick="displayNextMountain()">More mountains!</button>
 
-        <svg width="1440" height="1100" viewBox="0 0 1440 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-          <rect width="210" height="82.457" transform="matrix(0.912222 0.409696 0.409696 -0.912222 470 738.063)" fill="#B5B2C2"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13364 964.099L-309 248.445L-68 144.006V545.099H539.673L607.395 701.372L1.13364 964.099ZM299.594 -8.90051H284.843L297.262 -14.2823L299.594 -8.90051Z" fill="#DADFF7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M791.576 -8.90051L818.312 -50L881.491 -8.90051H791.576ZM431.186 545.099H1219.43L946.861 964.099L393 603.799L431.186 545.099Z" fill="#DADFF7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 256.657L1659.93 237.203L1718.15 895.374L941.22 964.099L904.156 545.099H1440V256.657Z" fill="#DADFF7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1898.75 550.36L1441 1111.1L747.651 545.099H1440V175.872L1898.75 550.36ZM1213.65 -8.90051H1156.7L1179.48 -36.7997L1213.65 -8.90051Z" fill="#5B7553"/>
-          <rect x="470" y="353.036" width="210" height="82.457" transform="rotate(-24.1857 470 353.036)" fill="#B5B2C2"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13364 127L-309 842.654L-68 947.093V546H539.673L607.395 389.727L1.13364 127ZM299.594 1100H284.843L297.262 1105.38L299.594 1100Z" fill="#DADFF7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M791.576 1100L818.312 1141.1L881.491 1100H791.576ZM431.186 546H1219.43L946.861 127L393 487.3L431.186 546Z" fill="#DADFF7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1446 834.442L1665.93 853.896L1724.15 195.725L947.22 127L910.156 546H1446V834.442Z" fill="#DADFF7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1898.75 540.74L1441 -20L747.651 546H1440V915.228L1898.75 540.74ZM1213.65 1100H1156.7L1179.48 1127.9L1213.65 1100Z" fill="#5B7553"/>
-          <g filter="url(#filter0_b)">
-          <rect y="546" width="1440" height="554" fill="#353643" fill-opacity="0.6"/>
-          </g>
-          </g>
-          <defs>
-          <filter id="filter0_b" x="-30" y="516" width="1500" height="614" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feGaussianBlur in="BackgroundImage" stdDeviation="15"/>
-          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
-          </filter>
+    <div id="mountains">
+      <svg
+        viewBox="0 0 1440 1076"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0)">
+          <path
+            d="M674.5 310.5L682.5 298.5L720 291L758 310.5L639.5 407.5L545.5 339L674.5 310.5Z"
+            fill="#ECECEC"
+          />
+          <path
+            d="M639.5 406L761.5 303.5L1003.5 137L1272 176.5L815 535H672.5L0 456V137L524 323.5L639.5 406Z"
+            fill="#C4C4C4"
+          />
+          <path d="M1440.16 -10V535.5H742L1440.16 -10Z" fill="#5B7553" />
+          <path d="M-0.102539 452L684 534.5H-0.102539V452Z" fill="#5B7553" />
+          <path
+            d="M674.5 759L682.5 771L720 778.5L758 759L639.5 662L545.5 730.5L674.5 759Z"
+            fill="#ECECEC"
+          />
+          <path
+            d="M639.5 663.5L761.5 766L1003.5 932.5L1272 893L815 534.5H672.5L0 613.5V932.5L524 746L639.5 663.5Z"
+            fill="#C4C4C4"
+          />
+          <path d="M1440.16 1079.5V534H742L1440.16 1079.5Z" fill="#5B7553" />
+          <path d="M-0.102539 616.5L684 534H-0.102539V616.5Z" fill="#5B7553" />
+          <rect y="534" width="1440" height="546" fill="url(#paint0_linear)" />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear"
+            x1="720"
+            y1="534"
+            x2="720"
+            y2="1080"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#343A40" stop-opacity="0.4" />
+            <stop offset="0.854167" stop-color="#343A40" />
+          </linearGradient>
           <clipPath id="clip0">
-          <rect width="1440" height="1100" fill="white"/>
+            <rect width="1440" height="1076" fill="white" />
           </clipPath>
-          </defs>
-          </svg>
-        </div>
-        <!-- mountains end -->
-      </div>
+        </defs>
+      </svg>
+    </div>
 
-      <div class="panel" id="aboutme">
-        <h2 class="panel__title">About Me</h2>
-        <div class="panel__content">
-          I’m Alex Jordan, a London-based software engineer. I used to be a
-          Product Manager, so you shouldn’t have to teach me the fundamentals.
-          I’m equally (un)comfortable in the front and back end but that is also
-          where I like to live, just on the edge of comfort where I am still
-          learning. I feel most confident coding in Javascript and Python but I
-          am also familiar with a few others, namely HTML/CSS, Ruby, Lua, and C.
-        </div>
+    <div id="aboutme" class="container panel">
+      <div class="row">
+        <div class="col-1"></div>
+        <h2 class="col-12 col-md-10">About Me</h2>
+        <div class="col-1"></div>
       </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-12 col-md-10">
+          <p>
+            I’m Alex Jordan, a London-based software engineer. In a past life
+            (but still in this life) I was a Product Manager who really enjoyed
+            working with teams to create amazing products. I felt a calling to be more hands on in the creation of products and have since explored more of the coding side of product development.
+          </p>
+          <p>
+            I’m equally (un)comfortable in the front and back end but that is
+            also where I like to live, just on the edge of comfort where I am
+            still learning. I feel most confident coding in Javascript and
+            Python but I am also familiar with a few others, namely HTML/CSS,
+            Ruby, Lua, and C.
+          </p>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
 
-      <div class="panel" id="portfolio">
-        <h2 class="panel__title">Portfolio</h2>
-        <div class="panel__content panel__portfolio">
-          <div class="portfolio-item">
-            <img
-              class="portfolio-item__photo"
-              src="assets/images/question.png"
-              alt=""
-            />
-            <div class="portfolio-item__description">
-              <h4>First Project</h4>
-              <p>
-                My tea's gone cold. I'm wondering why I got out of bed at all.
-                The morning rain clouds up my window. And I can't see at all.
-                And even if I could it'd all be gray. But your picture on my
-                wall. It reminds me that it's not so bad, it's not so bad.
-              </p>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img
-              class="portfolio-item__photo"
-              src="assets/images/question.png"
-              alt=""
-            />
-            <div class="portfolio-item__description">
-              <h4>Second Project</h4>
-              <p>
-                I’m the American Dream. I’m the definiton of white trash
-                ballin’. I’m right back on 'em. With a (chicka chicka chicka) I
-                can’t call it. Same shit, different toilet. Oh, you got a nice
-                ass, darling. Can’t wait to get you into my Benz, take you for a
-                spin. What you mean we ain't fuckin’? You take me for a friend?.
-                Let me tell you the whole story of Shady’s origin.
-              </p>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img
-              class="portfolio-item__photo"
-              src="assets/images/question.png"
-              alt=""
-            />
-            <div class="portfolio-item__description">
-              <h4>Third Project</h4>
-              <p>
-                Bagpipes from Baghdad. What's going through my mind. Half the
-                time, when I rhyme, or blowing up like. Bagpipes from Baghdad.
-                Somebody turn the vacancy sign on. 'Cause I'm gone, blowing on
-                my. Bagpipes from Baghdad. I run the streets. And act like a
-                madman holding a Glad.
-              </p>
-            </div>
-          </div>
-          <!-- this is an item vvvvvv -->
-          <div class="portfolio-item">
-            <img
-              class="portfolio-item__photo"
-              src="assets/images/question.png"
-              alt=""
-            />
-            <div class="portfolio-item__description">
-              <h4>Fourth Project</h4>
-              <p>
-                When you walked through the door. It was clear to me (Clear to
-                me). You’re the one they adore. Who they came to see (Who they
-                came to see). You’re a rock star (Baby). Everybody wants you
-                (Everybody wants you). Player, who can really blame you? (Who
-                can really blame you?). We’re the ones who made you.
-              </p>
-            </div>
-          </div>
-          <!-- this is an item ^^^^^ -->
-        </div>
+    <div id="portfolio" class="panel container">
+      <div class="row">
+        <div class="col-1"></div>
+        <h2 class="col-12 col-md-10">Portfolio</h2>
+        <div class="col-1"></div>
       </div>
-    </main>
+      <!-- portfolio__item start -->
+      <div class="row portfolio__item">
+        <div class="col-1"></div>
+        <div class="col-12 col-md-6">
+          <h4>Project One</h4>
+          <p>let's go back, follow the yellow brick road. As we go on another episode. Journey with me as I take you through this nifty little place. That I once used to call home sweet home. Come on, let's go back, follow the yellow brick road. As we go on another episode. Journey with me as I take you through this nifty little place. That I once used to call home sweet home.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="portfolio__visual">
+          <img class="portfolio__visual__img"
+              src="assets/images/question.png"
+              alt=""
+            />
+            
+          
+          <div class="portfolio__visual__icons">
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-bootstrap"></i>
+          </div>
+        </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <!-- portfolio__item end -->
+
+      <!-- portfolio__item start -->
+      <div class="row portfolio__item">
+        <div class="col-1"></div>
+        <div class="col-12 col-md-6">
+          <h4>Project Two</h4>
+          <p>I'm Slim Shady, yes, I'm the real Shady. All you other Slim Shadys are just imitating. So won't the real Slim Shady please stand up. Please stand up, please stand up?. 'Cause I'm Slim Shady, yes, I'm the real Shady. All you other Slim Shadys are just imitating. So won't the real Slim Shady please stand up. Please stand up, please stand up?</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="portfolio__visual">
+          <img class="portfolio__visual__img"
+              src="assets/images/question.png"
+              alt=""
+            />
+            
+          
+          <div class="portfolio__visual__icons">
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-bootstrap"></i>
+          </div>
+        </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <!-- portfolio__item end -->
+
+      <!-- portfolio__item start -->
+      <div class="row portfolio__item">
+        <div class="col-1"></div>
+        <div class="col-12 col-md-6">
+          <h4>Project Three</h4>
+          <p>If you could count the skeletons in my closet. Under my bed and up under my faucet. Then you would know I've completely lost it. Is he nuts? No, he's insane. If you could count the skeletons in my closet. Under my bed and up under my faucet. Then you would know I've completely lost it. Is he nuts? No, he's insane.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="portfolio__visual">
+          <img class="portfolio__visual__img"
+              src="assets/images/question.png"
+              alt=""
+            />
+            
+          
+          <div class="portfolio__visual__icons">
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-bootstrap"></i>
+          </div>
+        </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <!-- portfolio__item end -->
+
+      <!-- portfolio__item start -->
+      <div class="row portfolio__item">
+        <div class="col-1"></div>
+        <div class="col-12 col-md-6">
+          <h4>Project Four</h4>
+          <p>Mom, I know I let you down. And though you say the days are happy. Why is the power off and I'm fucked up?. And, Mom, I know he's not around. But don't you place the blame on me. As you pour yourself another drink, yeah. I guess we are who we are. Headlights shining in the dark night, I drive on. Maybe we took this too far.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="portfolio__visual">
+          <img class="portfolio__visual__img"
+              src="assets/images/question.png"
+              alt=""
+            />
+            
+          
+          <div class="portfolio__visual__icons">
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-bootstrap"></i>
+          </div>
+        </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <!-- portfolio__item end -->
+    </div>
   </body>
 </html>
+
+
