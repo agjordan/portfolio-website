@@ -27,7 +27,10 @@
     ></script>
     <script src="assets/scripts/index.js"></script>
     <link rel="stylesheet" href="assets/styles/index.css" />
-    <script src="https://kit.fontawesome.com/3defe8b6e7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3defe8b6e7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="text-light bg-dark">
     <nav id="nav" class="navbar navbar-expand navbar-dark fixed-top text-light">
@@ -50,9 +53,12 @@
       </div>
     </nav>
 
-    <button class="btn btn-primary fixed-bottom" onclick="displayNextMountain()">More mountains!</button>
+    <div class="name-tagline">
+      <h1>Alex Jordan</h1>
+      <h3>Web developer</h3>
+    </div>
 
-    <div id="mountains">
+    <!-- <div id="mountains">
       <svg
         viewBox="0 0 1440 1076"
         fill="none"
@@ -98,8 +104,169 @@
           </clipPath>
         </defs>
       </svg>
-    </div>
+    </div> -->
 
+    <div id="mountains">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg
+              viewBox="0 0 1440 1076"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M674.5 310.5L682.5 298.5L720 291L758 310.5L639.5 407.5L545.5 339L674.5 310.5Z"
+                  fill="#ECECEC"
+                />
+                <path
+                  d="M639.5 406L761.5 303.5L1003.5 137L1272 176.5L815 535H672.5L0 456V137L524 323.5L639.5 406Z"
+                  fill="#C4C4C4"
+                />
+                <path d="M1440.16 -10V535.5H742L1440.16 -10Z" fill="#5B7553" />
+                <path
+                  d="M-0.102539 452L684 534.5H-0.102539V452Z"
+                  fill="#5B7553"
+                />
+                <path
+                  d="M674.5 759L682.5 771L720 778.5L758 759L639.5 662L545.5 730.5L674.5 759Z"
+                  fill="#ECECEC"
+                />
+                <path
+                  d="M639.5 663.5L761.5 766L1003.5 932.5L1272 893L815 534.5H672.5L0 613.5V932.5L524 746L639.5 663.5Z"
+                  fill="#C4C4C4"
+                />
+                <path
+                  d="M1440.16 1079.5V534H742L1440.16 1079.5Z"
+                  fill="#5B7553"
+                />
+                <path
+                  d="M-0.102539 616.5L684 534H-0.102539V616.5Z"
+                  fill="#5B7553"
+                />
+                <rect
+                  y="534"
+                  width="1440"
+                  height="546"
+                  fill="url(#paint0_linear)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear"
+                  x1="720"
+                  y1="534"
+                  x2="720"
+                  y2="1080"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#343A40" stop-opacity="0.4" />
+                  <stop offset="0.854167" stop-color="#343A40" />
+                </linearGradient>
+                <clipPath id="clip0">
+                  <rect width="1440" height="1076" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <svg
+              viewBox="0 0 1440 1076"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M683 326L871.806 368.5L762.5 425L618 350L683 326Z"
+                  fill="#DADFF7"
+                />
+                <path
+                  d="M-4 380.5V294.5L92.5 262.5H242.5L287 282L437 271.5L772.5 416L706.5 467L515.5 507L269 498L-4 467V380.5Z"
+                  fill="#C4C4C4"
+                />
+                <path
+                  d="M-2 464.5L503 509H878L1201 562.5L1440.5 528.5V580.5V739H562L-2 660.5V464.5Z"
+                  fill="#5B7553"
+                />
+                <path
+                  d="M710.115 462.987L710.22 462.962L710.306 462.895L774.761 412.93L883.647 362.983L1081.58 330.994L1081.59 330.992L1081.59 330.991L1138.55 320H1172.5H1172.59L1172.68 319.966L1213.52 304.03L1366.85 352.477L1366.86 352.479L1366.86 352.481L1448.5 375.379V530.059L1194.01 561.995L883.579 512.006L883.54 512H883.5H501.808L710.115 462.987Z"
+                  fill="#C4C4C4"
+                  stroke="#6F6E6E"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="1440" height="1076" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <svg
+              viewBox="0 0 1440 1076"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M942 314H982.5L1138.5 346.5L1187.5 323H1426.5H1451.5V571L1282 601.5L1175.5 563L942 314Z"
+                  fill="#ECECEC"
+                />
+                <path
+                  d="M-3.5 338L342 474.5L398 494.5L586.5 451.5L673 365L1031 502L1262.5 591L1445.5 566.5V628.5H665.5H-3.5V338Z"
+                  fill="#5B7553"
+                />
+                <path
+                  d="M692 195.5L645.5 50L666 54.5L686 77L704 90.5L732 147V164L756 192L778.5 195.5L879.5 260.5L997.5 358L1105.5 463L1184 544L1172 559.5L1089.5 533L747.5 395.5L666 375L692 195.5Z"
+                  fill="#C4C4C4"
+                />
+                <path
+                  d="M-3.5 265.5L193.5 295.5H364.5L516 282.5L526.5 245L541.5 222L559.5 211.5L590 158.5L606 111.5L628.5 95.5V69.5L644.5 50L689 111.5L680.5 122.5L695 199L675 369.5L590 456L390.5 505.5L-3.5 343.5V265.5Z"
+                  fill="#ECECEC"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="1440" height="1076" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
     <div id="aboutme" class="container panel">
       <div class="row">
         <div class="col-1"></div>
@@ -112,7 +279,9 @@
           <p>
             I’m Alex Jordan, a London-based software engineer. In a past life
             (but still in this life) I was a Product Manager who really enjoyed
-            working with teams to create amazing products. I felt a calling to be more hands on in the creation of products and have since explored more of the coding side of product development.
+            working with teams to create amazing products. I felt a calling to
+            be more hands on in the creation of products and have since explored
+            more of the coding side of product development.
           </p>
           <p>
             I’m equally (un)comfortable in the front and back end but that is
@@ -137,23 +306,30 @@
         <div class="col-1"></div>
         <div class="col-12 col-md-6">
           <h4>Project One</h4>
-          <p>let's go back, follow the yellow brick road. As we go on another episode. Journey with me as I take you through this nifty little place. That I once used to call home sweet home. Come on, let's go back, follow the yellow brick road. As we go on another episode. Journey with me as I take you through this nifty little place. That I once used to call home sweet home.</p>
+          <p>
+            let's go back, follow the yellow brick road. As we go on another
+            episode. Journey with me as I take you through this nifty little
+            place. That I once used to call home sweet home. Come on, let's go
+            back, follow the yellow brick road. As we go on another episode.
+            Journey with me as I take you through this nifty little place. That
+            I once used to call home sweet home.
+          </p>
         </div>
         <div class="col-12 col-md-4">
           <div class="portfolio__visual">
-          <img class="portfolio__visual__img"
+            <img
+              class="portfolio__visual__img"
               src="assets/images/question.png"
               alt=""
             />
-            
-          
-          <div class="portfolio__visual__icons">
-            <i class="fab fa-sass"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-bootstrap"></i>
+
+            <div class="portfolio__visual__icons">
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+            </div>
           </div>
-        </div>
         </div>
         <div class="col-1"></div>
       </div>
@@ -164,23 +340,30 @@
         <div class="col-1"></div>
         <div class="col-12 col-md-6">
           <h4>Project Two</h4>
-          <p>I'm Slim Shady, yes, I'm the real Shady. All you other Slim Shadys are just imitating. So won't the real Slim Shady please stand up. Please stand up, please stand up?. 'Cause I'm Slim Shady, yes, I'm the real Shady. All you other Slim Shadys are just imitating. So won't the real Slim Shady please stand up. Please stand up, please stand up?</p>
+          <p>
+            I'm Slim Shady, yes, I'm the real Shady. All you other Slim Shadys
+            are just imitating. So won't the real Slim Shady please stand up.
+            Please stand up, please stand up?. 'Cause I'm Slim Shady, yes, I'm
+            the real Shady. All you other Slim Shadys are just imitating. So
+            won't the real Slim Shady please stand up. Please stand up, please
+            stand up?
+          </p>
         </div>
         <div class="col-12 col-md-4">
           <div class="portfolio__visual">
-          <img class="portfolio__visual__img"
+            <img
+              class="portfolio__visual__img"
               src="assets/images/question.png"
               alt=""
             />
-            
-          
-          <div class="portfolio__visual__icons">
-            <i class="fab fa-sass"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-bootstrap"></i>
+
+            <div class="portfolio__visual__icons">
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+            </div>
           </div>
-        </div>
         </div>
         <div class="col-1"></div>
       </div>
@@ -191,23 +374,29 @@
         <div class="col-1"></div>
         <div class="col-12 col-md-6">
           <h4>Project Three</h4>
-          <p>If you could count the skeletons in my closet. Under my bed and up under my faucet. Then you would know I've completely lost it. Is he nuts? No, he's insane. If you could count the skeletons in my closet. Under my bed and up under my faucet. Then you would know I've completely lost it. Is he nuts? No, he's insane.</p>
+          <p>
+            If you could count the skeletons in my closet. Under my bed and up
+            under my faucet. Then you would know I've completely lost it. Is he
+            nuts? No, he's insane. If you could count the skeletons in my
+            closet. Under my bed and up under my faucet. Then you would know
+            I've completely lost it. Is he nuts? No, he's insane.
+          </p>
         </div>
         <div class="col-12 col-md-4">
           <div class="portfolio__visual">
-          <img class="portfolio__visual__img"
+            <img
+              class="portfolio__visual__img"
               src="assets/images/question.png"
               alt=""
             />
-            
-          
-          <div class="portfolio__visual__icons">
-            <i class="fab fa-sass"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-bootstrap"></i>
+
+            <div class="portfolio__visual__icons">
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+            </div>
           </div>
-        </div>
         </div>
         <div class="col-1"></div>
       </div>
@@ -218,29 +407,48 @@
         <div class="col-1"></div>
         <div class="col-12 col-md-6">
           <h4>Project Four</h4>
-          <p>Mom, I know I let you down. And though you say the days are happy. Why is the power off and I'm fucked up?. And, Mom, I know he's not around. But don't you place the blame on me. As you pour yourself another drink, yeah. I guess we are who we are. Headlights shining in the dark night, I drive on. Maybe we took this too far.</p>
+          <p>
+            Mom, I know I let you down. And though you say the days are happy.
+            Why is the power off and I'm fucked up?. And, Mom, I know he's not
+            around. But don't you place the blame on me. As you pour yourself
+            another drink, yeah. I guess we are who we are. Headlights shining
+            in the dark night, I drive on. Maybe we took this too far.
+          </p>
         </div>
         <div class="col-12 col-md-4">
           <div class="portfolio__visual">
-          <img class="portfolio__visual__img"
+            <img
+              class="portfolio__visual__img"
               src="assets/images/question.png"
               alt=""
             />
-            
-          
-          <div class="portfolio__visual__icons">
-            <i class="fab fa-sass"></i>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-bootstrap"></i>
+
+            <div class="portfolio__visual__icons">
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+            </div>
           </div>
-        </div>
         </div>
         <div class="col-1"></div>
       </div>
       <!-- portfolio__item end -->
     </div>
+
+    <div id="contact" class="">
+      <!-- Calendly inline widget begin -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/jordan-alex/20-minute-chat?background_color=343a40&text_color=f8f9fa&primary_color=f8f9fa"
+        style="min-width: 320px; height: 630px"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+      ></script>
+      <!-- Calendly inline widget end -->
+    </div>
+    <footer id="footy">&copy; Alex Jordan - <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script></footer>
   </body>
 </html>
-
-
