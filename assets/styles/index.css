@@ -50,11 +50,25 @@ html::-webkit-scrollbar {
   position: absolute;
   top: 15%;
   left: 15%;
+  z-index: 1;
+  text-shadow: 1px 1px #343A40;
+}
+
+.down-chevron {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  font-size: 70px;
+  z-index: 1;
+  text-align: center;
+}
+.down-chevron a {
+  color: #f8f9fa;
 }
 
 footer {
   text-align: center;
-  margin-bottom: 5px;
+  padding-bottom: 25px;
 }
 
 .calendly-inline-widget {
