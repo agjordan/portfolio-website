@@ -18,6 +18,9 @@ html::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
 }
+.panel h2 {
+  margin-bottom: 40px;
+}
 
 .portfolio__visual {
   display: flex;
