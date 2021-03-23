@@ -21,15 +21,22 @@ html::-webkit-scrollbar {
 .portfolio__visual {
   display: flex;
   flex-direction: column;
+
+  .horizontal-line {
+    width: 80%;
+    height: 1px;
+  }
   .portfolio__visual__img {
     width: 100%;
+    object-fit: contain;
+    height: 20vh;
   }
   .portfolio__visual__icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
     i {
-      margin-top: 5px;
+      margin: 5px 10px;
       font-size: 2em;
     }
   }
@@ -40,6 +47,8 @@ html::-webkit-scrollbar {
   flex-direction: row;
   padding: 0;
   padding-bottom: 20px;
+  margin-bottom: 50px;
+  // border-bottom: 1px solid white;
 }
 
 .portfolio__item:nth-of-type(2n) {

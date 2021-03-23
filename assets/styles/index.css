@@ -23,15 +23,21 @@ html::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
 }
+.portfolio__visual .horizontal-line {
+  width: 80%;
+  height: 1px;
+}
 .portfolio__visual .portfolio__visual__img {
   width: 100%;
+  object-fit: contain;
+  height: 20vh;
 }
 .portfolio__visual .portfolio__visual__icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .portfolio__visual .portfolio__visual__icons i {
-  margin-top: 5px;
+  margin: 5px 10px;
   font-size: 2em;
 }
 
@@ -40,6 +46,7 @@ html::-webkit-scrollbar {
   flex-direction: row;
   padding: 0;
   padding-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .portfolio__item:nth-of-type(2n) {
