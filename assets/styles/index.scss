@@ -1,15 +1,3 @@
-//variables
-$background-col: #353643;
-
-$primary-text-col: #ececec;
-
-$font-family: "Roboto";
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
 html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -20,126 +8,109 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  background: $background-col;
-  color: $primary-text-col;
-  font-size: 1.2em;
-  font-family: $font-family;
-  width: 100%;
+.panel {
+  min-height: 100vh;
+  height: fit-content;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
 }
 
-nav {
-  //TODO: sort out size of links in top right
-  position: fixed;
+.portfolio__visual {
   display: flex;
-  justify-content: flex-end;
-  top: 0;
-  height: 7.5vh;
-  width: 100vw;
-  background: $background-col;
-  ul {
+  flex-direction: column;
+  .portfolio__visual__img {
+    width: 100%;
+  }
+  .portfolio__visual__icons {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    li {
-      padding: 5px;
-      list-style-type: none;
-      margin-right: 5%;
-      a {
-        text-decoration: none;
-        color: $primary-text-col;
-        font-family: $font-family;
-      }
+    justify-content: space-evenly;
+
+    i {
+      margin-top: 5px;
+      font-size: 2em;
     }
   }
 }
 
-main {
-  display: grid;
-  grid-template-areas:
-    "main-graphic"
-    "aboutme"
-    "portfolio"
-    "contact";
-}
-
-.main-graphic {
-  grid-area: main-graphic;
-  height: 100vh;
-  width: 100vw;
-
-  h1, h3 {
-    margin-left: 20%;
-    margin-top: 10%;
-    position: fixed;
-    z-index: 1;
-  }
-
-  h3 {
-    margin-top: 14%;
-  }
-
-  .mountains {
-    z-index: 0;
-  }
-}
-
-.panel {
-  padding: 15%;
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr 10fr;
-  // box-shadow: inset 0 0 1px white; //enable to see the boundary around panels
-
-  .panel__title {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .panel__content {
-    grid-column: 2/-2;
-    grid-row: 2/-2;
-  }
-}
-
-.portfolio-item {
+.portfolio__item {
   display: flex;
   flex-direction: row;
-  margin-bottom: 3%;
-
-  .portfolio-item__photo {
-    height: 200px;
-  }
-
-  .portfolio-item__description {
-    padding: 1%;
-    p {
-      font-family: $font-family;
-    }
-    h4 {
-      margin-bottom: 1%;
-
-    }
-  }
+  padding: 0;
+  padding-bottom: 20px;
 }
 
-.portfolio-item:nth-of-type(2n) {
+.portfolio__item:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
 
-.flex-flipped {
-  flex-direction: row-reverse;
+.name-tagline {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 1;
+  text-shadow: 1px 1px #343A40;
 }
 
-#aboutme {
-  grid-area: aboutme;
+.down-chevron {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  font-size: 70px;
+  z-index: 1;
+  text-align: center;
+  a {
+    color: #f8f9fa;
+  }
 }
 
-#porfolio {
-  grid-area: portfolio;
+footer {
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 #contact {
-  grid-area: contact;
+  // min-width:320px;
+  // min-height:750px;
+
+}
+
+.calendly-inline-widget {
+  position: relative;
+  min-width:320px;
+  min-height:750px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio__visual__icons {
+    font-size: 1em;
+    padding-bottom: 20px;
+  }
+
+  #contact {
+    min-width:320px;
+    min-height:750px;
+    height: fit-content;
+  }
+  
+  .calendly-inline-widget {
+    position: relative;
+    min-width:320px;
+    min-height:750px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  nav {
+    font-size: 0.8em;
+  }
 }
