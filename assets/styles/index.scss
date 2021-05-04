@@ -32,7 +32,8 @@ html::-webkit-scrollbar {
   .portfolio__visual__img {
     width: 100%;
     object-fit: contain;
-    height: 20vh;
+    min-height: 20vh;
+    max-height: 25vh;
   }
   .portfolio__visual__icons {
     display: flex;
@@ -83,10 +84,8 @@ footer {
   padding-bottom: 25px;
 }
 
-#contact {
-  // min-width:320px;
-  // min-height:750px;
-
+.links {
+  text-align: center;
 }
 
 .calendly-inline-widget {
