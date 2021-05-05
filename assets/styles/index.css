@@ -46,11 +46,18 @@ html::-webkit-scrollbar {
 }
 
 .portfolio__item {
+  position: relative;
   display: flex;
   flex-direction: row;
   padding: 0;
   padding-bottom: 20px;
   margin-bottom: 50px;
+}
+.portfolio__item .links {
+  text-align: center;
+}
+.portfolio__item::after {
+  color: lightblue;
 }
 
 .portfolio__item:nth-of-type(2n) {
@@ -62,7 +69,7 @@ html::-webkit-scrollbar {
   top: 15%;
   left: 15%;
   z-index: 1;
-  text-shadow: 1px 1px #343A40;
+  text-shadow: 1px 1px #343a40;
 }
 
 .down-chevron {
